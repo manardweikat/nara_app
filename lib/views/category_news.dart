@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nara_app/helper/news.dart';
 import 'package:nara_app/models/article_model.dart';
 import 'package:nara_app/views/article_list.dart';
-//author
 class CategoryNews extends StatefulWidget {
   final String category;
   CategoryNews({this.category});
