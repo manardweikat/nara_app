@@ -4,6 +4,7 @@ import 'package:nara_app/views/home.dart';
 
 import 'Reg_and_logo/Registration.dart';
 import 'Reg_and_logo/SignInPage.dart';
+import 'main.dart';
 
 
 void main(){
