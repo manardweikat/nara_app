@@ -84,19 +84,21 @@ class _HomeState extends State<Home> {
               ),
             ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+        items:  <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon:IconButton(icon:Icon(Icons.home_rounded,color: Colors.blueGrey,), onPressed: () { Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>MyHomePage())); },) ,
             label: 'Home',
+            //title: Text('Home',style: TextStyle(color: Colors.blueGrey),)
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.filter_list),
-            label: 'Categories',
+          BottomNavigationBarItem(icon:IconButton(icon:Icon(Icons.account_circle,color: Colors.blueGrey,), onPressed: () { Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>Profile())); },) ,
+            label: 'Profile',
           ),
         ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.redAccent,
-        onTap: _onItemTapped,
+        fixedColor: Colors.blueGrey,
+        //  currentIndex: _selectedIndex,
+        // selectedItemColor: Colors.redAccent[100],
+        //   onTap: _onItemTapped,
+
+
       ),
 
     );
