@@ -127,9 +127,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
           ),
         ],
 fixedColor: Colors.blueGrey,
-        //  currentIndex: _selectedIndex,
-       // selectedItemColor: Colors.redAccent[100],
-        //   onTap: _onItemTapped,
+
 
 
       ),
