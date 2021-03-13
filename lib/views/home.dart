@@ -7,6 +7,8 @@ import 'package:nara_app/models/category_model.dart';
 import 'package:nara_app/views/article_list.dart';
 import 'package:nara_app/views/category_list.dart';
 
+import '../profile.dart';
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -85,7 +87,7 @@ class _HomeState extends State<Home> {
             ),
       bottomNavigationBar: BottomNavigationBar(
         items:  <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon:IconButton(icon:Icon(Icons.home_rounded,color: Colors.blueGrey,), onPressed: () { Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>MyHomePage())); },) ,
+          BottomNavigationBarItem(icon:IconButton(icon:Icon(Icons.home_rounded,color: Colors.blueGrey,), onPressed: () { Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>Home())); },) ,
             label: 'Home',
             //title: Text('Home',style: TextStyle(color: Colors.blueGrey),)
           ),
