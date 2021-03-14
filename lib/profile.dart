@@ -126,7 +126,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
             label: 'Profile',
           ),
         ],
-fixedColor: Colors.blueGrey,
+         fixedColor: Colors.blueGrey,
 
 
 
